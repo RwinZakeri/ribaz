@@ -1,10 +1,13 @@
 import { tabType } from "./type";
 
-const TabCard = ({ id, index, title, theme }: tabType) => {
+const TabCard = ({ id, index, title, theme, className }: tabType) => {
   const getTheme = (theme: tabType["theme"]) => {
     switch (theme) {
       case "dark":
-        return "serviceCardDark";
+        return "serviceCardDark ";
+        break;
+      case "orange":
+        return "serviceCardOrange ";
         break;
 
       default:
@@ -15,7 +18,7 @@ const TabCard = ({ id, index, title, theme }: tabType) => {
 
   return (
     <div
-      className={`shadow-sm serviceCardLight p-4 ${getTheme(theme)} `}
+      className={`shadow-sm p-4 w-full ${getTheme(theme)} ${className}`}
       key={id}
     >
       <span>{index + 1}</span>
