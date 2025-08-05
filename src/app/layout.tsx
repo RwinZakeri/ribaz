@@ -34,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa" dir="rtl" className={`${iranSans.className}   `}>
-      <body className={`h-[200vh] ${iranSans.className} `}>
+      <body className={`${iranSans.className} `}>
         <Layout>{children}</Layout>
       </body>
     </html>
