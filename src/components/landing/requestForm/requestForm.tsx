@@ -6,7 +6,10 @@ import { Radio } from "../radio/radio";
 
 const RequestForm = () => {
   return (
-    <div className="w-full bg-[url(/images/dotted-vector-pattern.png)] mb-36 ">
+    <div
+      id="contact"
+      className="w-full bg-[url(/images/dotted-vector-pattern.png)] mb-36 "
+    >
       <div className="max-w-[1300px] mx-auto flex-col flex items-center xl:flex-row p-8 justify-center gap-4">
         <div className="flex gap-2 flex-col w-full">
           <h2 className="text-big xl:text-start font-morabba text-center">

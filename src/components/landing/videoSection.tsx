@@ -1,6 +1,6 @@
 const VideoSection = () => {
   return (
-    <div className=" relative">
+    <div id="home" className=" relative">
       <video
         className="w-full object-cover aspect-square h-[95vh]"
         src="/video/young-friends-hanging-social-media-720p-5s.mp4"

@@ -4,32 +4,27 @@ const navItem = [
   {
     id: uuidv4(),
     title: "صفحه اصلی",
-    href: "/",
+    href: "#home",
   },
   {
     id: uuidv4(),
-
     title: "خدمات ما",
-    href: "/services",
+    href: "#services",
   },
   {
     id: uuidv4(),
-
-    title: "سولات متداول",
-    href: "/about",
+    title: "طرح‌ها",
+    href: "#plans",
   },
   {
     id: uuidv4(),
-
-    title: "درباره ما",
-    href: "/about",
+    title: "سوالات متداول",
+    href: "#faq",
   },
-
   {
     id: uuidv4(),
-
-    title: "فارسی",
-    href: "/",
+    title: "تماس با ما",
+    href: "#contact",
   },
 ];
 export default navItem;

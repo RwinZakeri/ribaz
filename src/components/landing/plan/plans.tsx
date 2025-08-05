@@ -4,7 +4,7 @@ import { plansData } from "./plansData";
 
 const Plans = () => {
   return (
-    <div className="wrapper mx-auto mb-36">
+    <div id="plans" className="wrapper mx-auto mb-36">
       <h2 className="text-big font-morabba text-center mb-7">پلن ها .</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:grid-cols-3  px-8 xl:px-0">

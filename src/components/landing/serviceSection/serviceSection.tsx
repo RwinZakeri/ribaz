@@ -4,6 +4,7 @@ import { services } from "./services";
 const ServiceSection = () => {
   return (
     <section
+      id="services"
       className="w-full mx-auto h-[740px] lg:h-60 bg-[url(/images/dotted-vector-pattern.png)] relative mb-36"
       aria-label="Our Services"
     >

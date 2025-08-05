@@ -1,7 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 import navItem from "./navItem";
 
@@ -10,6 +9,16 @@ const HeaderNav = () => {
 
   const clickHandler = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleLinkClick = (href: string) => {
+    if (href.startsWith("#")) {
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+    setIsOpen(false);
   };
 
   return (
@@ -37,9 +46,13 @@ const HeaderNav = () => {
         >
           <div className="flex flex-col ">
             {navItem?.map((item) => (
-              <Link href={item.href} key={item.id} className="p-6 text-base">
+              <button
+                onClick={() => handleLinkClick(item.href)}
+                key={item.id}
+                className="p-6 text-base text-right w-full hover:bg-gray-50"
+              >
                 {item?.title}
-              </Link>
+              </button>
             ))}
           </div>
         </div>
@@ -47,13 +60,13 @@ const HeaderNav = () => {
       {/* nav on desktop */}
       <div className="hidden xl:flex px-12">
         {navItem?.map((item) => (
-          <Link
-            href={item.href}
+          <button
+            onClick={() => handleLinkClick(item.href)}
             key={item.id}
-            className="p-6 xl:py-[13px] xl:px-[20px] text-base xl:text-lg"
+            className="p-6 xl:py-[13px] xl:px-[20px] text-base xl:text-lg hover:text-primary transition-colors"
           >
             {item?.title}
-          </Link>
+          </button>
         ))}
       </div>
     </nav>
