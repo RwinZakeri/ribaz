@@ -1,3 +1,4 @@
+import Banner from "@/components/landing/banner/banner";
 import CreateValue from "@/components/landing/createValue/CreateValue";
 import Faq from "@/components/landing/faq/faq";
 import FromOrder from "@/components/landing/fromOrder/FromOrder";
@@ -16,6 +17,7 @@ const landing = () => {
       <CreateValue />
       <RequestForm />
       <Faq />
+      <Banner />
     </>
   );
 };
