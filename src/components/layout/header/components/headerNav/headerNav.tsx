@@ -31,7 +31,7 @@ const HeaderNav = () => {
         </Button>
 
         <div
-          className={`transition-all duration-500 overflow-hidden absolute left-0 top-24 w-full bg-white ${
+          className={`transition-all shadow-2xl duration-500 overflow-hidden absolute left-0 top-24 w-full bg-white ${
             isOpen ? "max-h-[360px]" : "max-h-0"
           } rounded-sm`}
         >
